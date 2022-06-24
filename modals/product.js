@@ -14,6 +14,7 @@ const productSchema=new mongoose.Schema({
         type:String,
         required:true,
     },
+
     desc:{
         type:String,
         required:true,
@@ -22,6 +23,12 @@ const productSchema=new mongoose.Schema({
         type:Number,
         required:true,   
      },
+    userCreated:mongoose.Mongoose.Schema.Types.ObjectId,
+    userLiked:[
+        {
+            type:mongoose.Mongoose.Schema.Type.ObjectId,
+        }
+    ],
     lastUpdated:Date,
     lastUpdatedTime:String,
 })
