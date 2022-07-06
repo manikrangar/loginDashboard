@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-// router.get("/aproducts",(req,res)=>{
+router.get("/products",(req,res)=>{
     
-//     res.render("../views/partials/products");
-// })
+    res.render("../views/partials/products");
+})
 
 // router.post("/products",(req,res)=>{
     
