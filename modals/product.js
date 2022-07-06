@@ -23,14 +23,15 @@ const productSchema=new mongoose.Schema({
         type:Number,
         required:true,   
      },
-    userCreated:mongoose.Mongoose.Schema.Types.ObjectId,
-    userLiked:[
-        {
-            type:mongoose.Mongoose.Schema.Type.ObjectId,
-        }
-    ],
+    userCreated:String,
     lastUpdated:Date,
     lastUpdatedTime:String,
+    userLiked:[
+        {
+            type:String,
+            // mongoose.Schema.Types.ObjectId
+        }
+    ],
 })
 
 const Product  = mongoose.model('Product',productSchema);

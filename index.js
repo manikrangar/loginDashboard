@@ -49,12 +49,17 @@ app.use(flash());
 
 const loginRoute=require('./routes/loginRoute');
 const signupRoute=require('./routes/signupRoute');
+const productRoute=require('./routes/productRoute');
+const dashboardRoute=require("./routes/dashboardRoute");
 
 app.use(signupRoute);
 // const signupRoute=require("./routes/signupRoute");
 
 // signupRoute.get()
 app.use(loginRoute);
+app.use(productRoute);
+app.use(dashboardRoute);
+
 app.get("/",(req,res)=>{
 
   res.render("./partials/navbar");

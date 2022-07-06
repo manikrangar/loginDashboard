@@ -38,7 +38,7 @@ router.post("/login",(req,res)=>{
                 sent=1;
                 // res.redirect("/user/dashboard")
                 // req.flash("errorMessage","Logged In Successfully");
-                res.render("../views/dash/dashboard",{user:result[0]});
+                res.redirect(`/dashboard/${result[0]._id}`);
             }
         }
         
