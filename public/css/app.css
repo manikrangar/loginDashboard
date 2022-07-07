@@ -23,7 +23,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+/* button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -32,7 +32,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+} */
 
 button:hover {
   opacity:1;
@@ -94,7 +94,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+/* button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -103,7 +103,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+} */
 
 button:hover {
   opacity:1;
@@ -163,7 +163,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+/* button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -172,7 +172,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-}
+} */
 
 button:hover {
   opacity:1;

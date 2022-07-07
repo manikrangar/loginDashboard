@@ -1,5 +1,39 @@
 <%- include ("./header") -%>
+<div class="container-fluid m-5" style="display:flex; flex-wrap:wrap; ;">
 
-this is product section
+    <% products.forEach(function(product){  %>
+        
+        <!-- <span class="card text-center" style="width: 16rem;">
+            <img class="card-img-top" src='<%= product.image %>' alt="Card image cap">
+            <div class="card-body">
+                <h6 class="card-title"> <%= product.title %></h6> 
+                <span class="card-title"><%= product.price %></span>
+                
+                <p class="card-text"><%= product.desc %></p>
+                <span> Createtd By <%= product.userCreated %></span> 
+                <a href="#" class="btn btn-success">Add to Cart</a>
+                <a href="#" class="btn btn-primary">View More</a>
+                
+            </div>
+        </span> -->
+        
+        <div class="card m-2 p-2" style="width:400px">
+            <img class="card-img-top" src='<%= product.image %>' alt="Card image" width="350px" height="250px">
+            <div class="card-body">
+                <h5 class="card-title"><%= product.title %></h5>
+                <h5 class="card-title"><%= product.price %></h5>
 
-<%- include ("./footer") -%>
+                <p class="card-text"><%= product.desc.split(" ").splice(0,20).join(" ") %> ...</p>
+                <p class="card-text">Seller : TEMPNAME </p>
+
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Expand</a>
+
+            </div>
+        </div>
+        
+        <% });  %>
+</div>
+    
+        <%- include ("./footer") -%>
+        

@@ -14,6 +14,9 @@ router.get("/login",(req,res)=>{
 });
 
 router.post("/login",(req,res)=>{
+
+
+
     console.log("this is post of login page");
     console.log(req.body);
 
@@ -38,6 +41,17 @@ router.post("/login",(req,res)=>{
                 sent=1;
                 // res.redirect("/user/dashboard")
                 // req.flash("errorMessage","Logged In Successfully");
+                try{
+
+                    // global.localStorage.setItem("currentUserEmail",email);
+                    // global.localStorage.setItem("currentUserPassword",psw);
+                }catch(err)
+                {
+                    console.log(err)
+                }
+                // console.log(window.localStorage.getItem('currentUserEmail'));
+                // console.log(window.localStorage.getItem('currentUserPassword'));
+
                 res.redirect(`/dashboard/${result[0]._id}`);
             }
         }
