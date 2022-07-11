@@ -51,7 +51,8 @@ router.post("/login",(req,res)=>{
                 }
                 // console.log(window.localStorage.getItem('currentUserEmail'));
                 // console.log(window.localStorage.getItem('currentUserPassword'));
-
+                    
+                
                 res.redirect(`/dashboard/${result[0]._id}`);
             }
         }
